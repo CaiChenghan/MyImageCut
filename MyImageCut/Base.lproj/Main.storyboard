@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s2T-c3-MOX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="268"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fGQ-nw-j55">
+                                <rect key="frame" x="0.0" y="320" width="600" height="280"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fGQ-nw-j55" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="3QN-cC-xIH"/>
+                            <constraint firstItem="s2T-c3-MOX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="5SW-WY-YMZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s2T-c3-MOX" secondAttribute="trailing" constant="-20" id="ava-uA-28Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fGQ-nw-j55" secondAttribute="bottom" id="czI-aU-fd6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fGQ-nw-j55" secondAttribute="trailing" constant="-20" id="dUt-3x-vpv"/>
+                            <constraint firstItem="s2T-c3-MOX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="268/600" id="m45-Ou-Jtj"/>
+                            <constraint firstItem="s2T-c3-MOX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="w3x-sX-JMP"/>
+                            <constraint firstItem="fGQ-nw-j55" firstAttribute="top" secondItem="s2T-c3-MOX" secondAttribute="bottom" constant="52" id="zcU-XN-NI1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImage" destination="s2T-c3-MOX" id="NcT-z4-Gp1"/>
+                        <outlet property="secondImage" destination="fGQ-nw-j55" id="DMU-If-w5F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>
